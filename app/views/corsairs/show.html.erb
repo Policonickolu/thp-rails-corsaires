@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-sm-4">
+        <div class="bs-component">
+          
+<h1>
+    <%= @corsair.first_name %>
+</h1>
+
+<p class="list-group-item">
+    Age : <%= @corsair.age %>
+</p>
+<p class="list-group-item">
+    Bio : <%= @corsair.bio %>
+</p class="list-group-item">
+<p class="list-group-item">
+    Préférence : <% if @corsair.likeness? %>
+        <%= @corsair.likeness %>
+    <% else %>
+        Pas de préférence. 
+    <% end %>
+</p>
+<p class="list-group-item">
+    Slack : <% if @corsair.slack_handle? %>
+        <%= @corsair.slack_handle %>
+    <% else %>
+        Pas de slack. 
+    <% end %>
+</p>
+<p class="list-group-item">
+    Github : <% if @corsair.github_handle? %>
+        <%= @corsair.github_handle %>
+    <% else %>
+        Pas de github. 
+    <% end %>
+</p>
+</div>
+</div>
+</div>
+<%= link_to "Modifier", edit_corsair_path(@corsair), class: "btn btn-link" %>
+
+<%= link_to "Revenir à la liste", corsairs_path, class: "btn btn-link" %>

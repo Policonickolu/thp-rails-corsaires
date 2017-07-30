@@ -1,2 +1,3 @@
-# thp-rails-corsaires
-Site Rails à propos des corsaires de TheHackingProject.org
+# README
+
+Site des corsaires de THP !!!

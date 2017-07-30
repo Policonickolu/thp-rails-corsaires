@@ -1,0 +1,7 @@
+<h1>Modifier un Corsaire</h1>
+
+<%= render partial: "form" %>
+
+    <%= link_to "Supprimer", corsair_path(@corsair), method: :delete, data: {confirm: "Voulez-vous vraiment supprimer ce corsaire ?"}, class: "btn btn-link" %>
+
+        <%= link_to "Retour", corsair_path(@corsair), class: "btn btn-link" %>

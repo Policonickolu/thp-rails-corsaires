@@ -1,0 +1,17 @@
+<h1>Les Corsaires</h1>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="bs-component">
+            <ul class="list-group">
+                <% @corsairs.each do |c| %>
+
+                    <li class="list-group-item">
+                        <%= link_to  "#{c.first_name}, #{c.age} ans", corsair_path(c) %>
+                    </li>
+
+                    <% end %>
+
+            </ul>
+        </div>
+    </div>
+</div>
